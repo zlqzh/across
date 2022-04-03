@@ -45,6 +45,7 @@
 ## l2tp.sh
 
 root 用户登录后，运行以下命令：
+
 wget --no-check-certificate https://raw.githubusercontent.com/zlqzh/across/master/l2tp.sh
 chmod +x l2tp.sh
 ./l2tp.sh
