@@ -4,8 +4,8 @@ export PATH
 #=======================================================================#
 #   System Supported:  CentOS 6+ / Debian 7+ / Ubuntu 12+               #
 #   Description: L2TP VPN Auto Installer                                #
-#   Author: Teddysun <i@teddysun.com>                                   #
-#   Intro:  https://teddysun.com/448.html                               #
+#   Author: Xjpower <zlq@qq.com>                                        #
+#   Intro:  http://ipds.cc/                                             #
 #=======================================================================#
 cur_dir=`pwd`
 
@@ -223,26 +223,26 @@ preinstall_l2tp(){
     fi
     echo
     echo "Please enter IP-Range:"
-    read -p "(Default Range: 192.168.18):" iprange
-    [ -z ${iprange} ] && iprange="192.168.18"
+    read -p "(Default Range: 172.16.101):" iprange
+    [ -z ${iprange} ] && iprange="172.16.101"
 
     echo "Please enter PSK:"
-    read -p "(Default PSK: teddysun.com):" mypsk
-    [ -z ${mypsk} ] && mypsk="teddysun.com"
+    read -p "(Default PSK: xjpower):" mypsk
+    [ -z ${mypsk} ] && mypsk="xjpower"
 
     echo "Please enter Username:"
-    read -p "(Default Username: teddysun):" username
-    [ -z ${username} ] && username="teddysun"
+    read -p "(Default Username: xjpower):" username
+    [ -z ${username} ] && username="xjpower"
 
     password=`rand`
     echo "Please enter ${username}'s password:"
-    read -p "(Default Password: ${password}):" tmppassword
-    [ ! -z ${tmppassword} ] && password=${tmppassword}
+    read -p "(Default Password: 197888):" tmppassword
+    [ ! -z ${tmppassword} ] && password="197888"
 
     echo
     echo "ServerIP:${IP}"
     echo "Server Local IP:${iprange}.1"
-    echo "Client Remote IP Range:${iprange}.2-${iprange}.254"
+    echo "Client Remote IP Range:${iprange}.2-${iprange}.199"
     echo "PSK:${mypsk}"
     echo
     echo "Press any key to start... or press Ctrl + C to cancel."
@@ -654,8 +654,8 @@ finally(){
     echo "###############################################################"
     echo "# L2TP VPN Auto Installer                                     #"
     echo "# System Supported: CentOS 6+ / Debian 7+ / Ubuntu 12+        #"
-    echo "# Intro: https://teddysun.com/448.html                        #"
-    echo "# Author: Teddysun <i@teddysun.com>                           #"
+    echo "# Intro: http://IPDS.CC/                                      #"
+    echo "# Author: xjpower <zlq@qq.com>                                #"
     echo "###############################################################"
     echo "If there is no [FAILED] above, you can connect to your L2TP "
     echo "VPN Server with the default Username/Password is below:"
@@ -683,8 +683,8 @@ l2tp(){
     echo "###############################################################"
     echo "# L2TP VPN Auto Installer                                     #"
     echo "# System Supported: CentOS 6+ / Debian 7+ / Ubuntu 12+        #"
-    echo "# Intro: https://teddysun.com/448.html                        #"
-    echo "# Author: Teddysun <i@teddysun.com>                           #"
+    echo "# Intro: http://IPDS.CC/                                      #"
+    echo "# Author: xjpower <zlq@qq.com>                                #"
     echo "###############################################################"
     echo
     rootness
