@@ -52,6 +52,9 @@ chmod +x l2tp.sh
 
 ./l2tp.sh
 
+
+http://www.piaoyi.org/linux/Linux-PPTP-VPN-IP.html
+
 ## pptp.sh(Deprecated, DO NOT USE)
 
 Copyright (C) 2013-2021 Teddysun <i@teddysun.com>
